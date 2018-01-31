@@ -22,7 +22,14 @@ namespace api.Services
 
         public IEnumerable<Zipcode> ListZipcode_by_Province_Code(string id)
         {
-            return _context.Zipcode.Where(m => m.PROVINCE_CODE == int.Parse(id)).ToList();
+            IEnumerable<Zipcode> listResult = _context.Zipcode
+                    .Where(m => m.PROVINCE_CODE == int.Parse(id) && m.ZIP_CODE != 0 )
+                    .GroupBy(m => m.ZIP_CODE)
+                    .Select(m => m.FirstOrDefault())
+                    .OrderBy(m => m.ZIP_CODE)
+                    .ToList();
+
+            return listResult;
         }
 
     }
