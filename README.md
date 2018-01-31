@@ -1,9 +1,9 @@
-# esb-atdd-tdd
+# esb-lab
 
-Demo Workshop for class ATDD TDD
+Lab for esb
 
 ## Create Database
-Import file esb_atdd_tdd.sql
+Import file *.sql (exclude from GIT)
 
 ## RUN as Development
 ``ASPNETCORE_ENVIRONMENT=Development dotnet run``
