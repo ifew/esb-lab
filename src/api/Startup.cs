@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Swashbuckle.AspNetCore.Swagger;
+using System.IO;
 
 namespace api
 {
@@ -62,10 +63,14 @@ namespace api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+
+                var basePath = AppContext.BaseDirectory;
+                var xmlPath = Path.Combine(basePath, "MyApi.xml"); 
+                c.IncludeXmlComments(xmlPath);
             });
 
-            services.AddMvc();
-        }
+                services.AddMvc();
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -74,7 +79,7 @@ namespace api
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {

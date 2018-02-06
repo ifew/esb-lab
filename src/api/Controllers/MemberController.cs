@@ -25,6 +25,9 @@ namespace api.Controllers
             return Json("Hi this MemberService");
         }
 
+        /// <summary>
+        /// Get Member information from id
+        /// </summary>
         [HttpGet("info/{id}")]
         public JsonResult GetById(string id)
         {
