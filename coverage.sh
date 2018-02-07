@@ -12,5 +12,5 @@ $MiniCover instrument --workdir ../../ --sources "src/api/Services/*.cs" --sourc
 dotnet test --no-build
 
 $MiniCover uninstrument --workdir ../../ --coverage-file "tests/api.UnitTest.Result/coverage.json"
-$MiniCover htmlreport --workdir ../../ --coverage-file "tests/api.UnitTest.Result/coverage.json" --output "tests/api.UnitTest.Result/report" --threshold 90
 $MiniCover report --workdir ../../ --coverage-file "tests/api.UnitTest.Result/coverage.json" --threshold 90
+$MiniCover htmlreport --workdir ../../ --coverage-file "tests/api.UnitTest.Result/coverage.json" --output "tests/api.UnitTest.Result/report" --threshold 90
