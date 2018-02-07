@@ -39,6 +39,7 @@ bld/
 tests/atdd/*.png
 tests/atdd/*.html
 tests/atdd/*.xml
+tests/api.UnitTest.Result
 
 # NUNIT
 *.VisualState.xml
