@@ -25,6 +25,12 @@ namespace api.Controllers
             return Json("Hi this MemberService");
         }
 
+        [HttpGet("get_config_text")]
+        public JsonResult GetConfigText()
+        {
+            return Json(_service.Get_Config_Text());
+        }
+
         [HttpGet("list_zipcode")]
         public IEnumerable<Zipcode> ListZipcode()
         {

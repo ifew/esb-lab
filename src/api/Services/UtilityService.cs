@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using api.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace api.Services
 {
@@ -32,6 +35,18 @@ namespace api.Services
             return listResult;
         }
 
+        public IConfiguration Configuration { get; set;}
+        public IHostingEnvironment env { get;}
+        public String Get_Config_Text()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+
+            Configuration = builder.Build();
+
+            return Configuration["Test:Name"];
+        }
     }
 
 }
