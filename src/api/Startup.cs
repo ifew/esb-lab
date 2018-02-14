@@ -35,6 +35,7 @@ namespace api
             services.AddDbContext<UtilityContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<MemberService, MemberService>();
             services.AddScoped<UtilityService, UtilityService>();
+            services.AddScoped<BotService, BotService>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
                 {
