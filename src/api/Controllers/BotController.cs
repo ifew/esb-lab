@@ -19,6 +19,17 @@ namespace api.Controllers
             _service = service;
         }
 
+
+        /// <summary>
+        /// Test Ping
+        /// </summary>
+        [HttpGet]
+        [Route("ping")]
+        public IActionResult Ping()
+        {
+            return Ok();
+        }
+
         /// <summary>
         /// Get Exchange Rate Average by daily from BOT
         /// </summary>
