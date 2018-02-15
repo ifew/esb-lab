@@ -1,6 +1,6 @@
-# esb-lab
+# netcore-lab
 
-Lab for esb
+For my learning .NET CORE 2
 
 ## Create Database
 Import file *.sql (exclude from GIT)
