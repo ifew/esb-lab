@@ -1,0 +1,754 @@
+{
+  "SourcePath": "/Users/ifew/www_customer/easybuy/lab/",
+  "HitsFile": "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest.Result/coverage-hits.txt",
+  "ExtraAssemblies": [
+    "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest/bin/Debug/netcoreapp2.0/dotnet-minicover.dll"
+  ],
+  "Assemblies": [
+    {
+      "Name": "api",
+      "SourceFiles": {
+        "src/api/Models/Member.cs": {
+          "Instructions": [
+            {
+              "Id": 19,
+              "StartLine": 12,
+              "EndLine": 12,
+              "StartColumn": 25,
+              "EndColumn": 29,
+              "Class": "api.Models.Member",
+              "Method": "get_Id",
+              "MethodFullName": "System.Int32 api.Models.Member::get_Id()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 20,
+              "StartLine": 12,
+              "EndLine": 12,
+              "StartColumn": 30,
+              "EndColumn": 34,
+              "Class": "api.Models.Member",
+              "Method": "set_Id",
+              "MethodFullName": "System.Void api.Models.Member::set_Id(System.Int32)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 21,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 34,
+              "EndColumn": 38,
+              "Class": "api.Models.Member",
+              "Method": "get_Fullname",
+              "MethodFullName": "System.String api.Models.Member::get_Fullname()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 22,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 39,
+              "EndColumn": 43,
+              "Class": "api.Models.Member",
+              "Method": "set_Fullname",
+              "MethodFullName": "System.Void api.Models.Member::set_Fullname(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 23,
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 33,
+              "EndColumn": 37,
+              "Class": "api.Models.Member",
+              "Method": "get_Card_no",
+              "MethodFullName": "System.String api.Models.Member::get_Card_no()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 24,
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 38,
+              "EndColumn": 42,
+              "Class": "api.Models.Member",
+              "Method": "set_Card_no",
+              "MethodFullName": "System.Void api.Models.Member::set_Card_no(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 25,
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 37,
+              "EndColumn": 41,
+              "Class": "api.Models.Member",
+              "Method": "get_Personal_id",
+              "MethodFullName": "System.String api.Models.Member::get_Personal_id()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 26,
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 42,
+              "EndColumn": 46,
+              "Class": "api.Models.Member",
+              "Method": "set_Personal_id",
+              "MethodFullName": "System.Void api.Models.Member::set_Personal_id(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 27,
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 36,
+              "EndColumn": 40,
+              "Class": "api.Models.Member",
+              "Method": "get_Birthday",
+              "MethodFullName": "System.DateTime api.Models.Member::get_Birthday()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 28,
+              "StartLine": 29,
+              "EndLine": 29,
+              "StartColumn": 41,
+              "EndColumn": 45,
+              "Class": "api.Models.Member",
+              "Method": "set_Birthday",
+              "MethodFullName": "System.Void api.Models.Member::set_Birthday(System.DateTime)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 29,
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 37,
+              "EndColumn": 41,
+              "Class": "api.Models.Member",
+              "Method": "get_Mobilephone",
+              "MethodFullName": "System.String api.Models.Member::get_Mobilephone()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 30,
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 42,
+              "EndColumn": 46,
+              "Class": "api.Models.Member",
+              "Method": "set_Mobilephone",
+              "MethodFullName": "System.Void api.Models.Member::set_Mobilephone(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            }
+          ]
+        },
+        "src/api/Models/MemberContext.cs": {
+          "Instructions": [
+            {
+              "Id": 31,
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 13,
+              "EndColumn": 35,
+              "Class": "api.Models.MemberContext",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Models.MemberContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<api.Models.MemberContext>)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 32,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 40,
+              "EndColumn": 44,
+              "Class": "api.Models.MemberContext",
+              "Method": "get_Members",
+              "MethodFullName": "Microsoft.EntityFrameworkCore.DbSet`1<api.Models.Member> api.Models.MemberContext::get_Members()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 33,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 45,
+              "EndColumn": 49,
+              "Class": "api.Models.MemberContext",
+              "Method": "set_Members",
+              "MethodFullName": "System.Void api.Models.MemberContext::set_Members(Microsoft.EntityFrameworkCore.DbSet`1<api.Models.Member>)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 34,
+              "StartLine": 18,
+              "EndLine": 19,
+              "StartColumn": 13,
+              "EndColumn": 44,
+              "Class": "api.Models.MemberContext",
+              "Method": "OnModelCreating",
+              "MethodFullName": "System.Void api.Models.MemberContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)",
+              "Instruction": "IL_0001: ldarg modelBuilder"
+            }
+          ]
+        },
+        "src/api/Models/RegisterModel.cs": {
+          "Instructions": [
+            {
+              "Id": 35,
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 36,
+              "EndColumn": 40,
+              "Class": "api.Models.RegisterModel",
+              "Method": "get_txt_CardNo",
+              "MethodFullName": "System.String api.Models.RegisterModel::get_txt_CardNo()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 36,
+              "StartLine": 10,
+              "EndLine": 10,
+              "StartColumn": 41,
+              "EndColumn": 45,
+              "Class": "api.Models.RegisterModel",
+              "Method": "set_txt_CardNo",
+              "MethodFullName": "System.Void api.Models.RegisterModel::set_txt_CardNo(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 37,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 36,
+              "EndColumn": 40,
+              "Class": "api.Models.RegisterModel",
+              "Method": "get_txt_CardID",
+              "MethodFullName": "System.String api.Models.RegisterModel::get_txt_CardID()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 38,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 41,
+              "EndColumn": 45,
+              "Class": "api.Models.RegisterModel",
+              "Method": "set_txt_CardID",
+              "MethodFullName": "System.Void api.Models.RegisterModel::set_txt_CardID(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 39,
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 39,
+              "EndColumn": 43,
+              "Class": "api.Models.RegisterModel",
+              "Method": "get_txt_BirthDate",
+              "MethodFullName": "System.String api.Models.RegisterModel::get_txt_BirthDate()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 40,
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 44,
+              "EndColumn": 48,
+              "Class": "api.Models.RegisterModel",
+              "Method": "set_txt_BirthDate",
+              "MethodFullName": "System.Void api.Models.RegisterModel::set_txt_BirthDate(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 41,
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 38,
+              "EndColumn": 42,
+              "Class": "api.Models.RegisterModel",
+              "Method": "get_txt_MobileNo",
+              "MethodFullName": "System.String api.Models.RegisterModel::get_txt_MobileNo()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 42,
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 43,
+              "EndColumn": 47,
+              "Class": "api.Models.RegisterModel",
+              "Method": "set_txt_MobileNo",
+              "MethodFullName": "System.Void api.Models.RegisterModel::set_txt_MobileNo(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 43,
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 38,
+              "EndColumn": 42,
+              "Class": "api.Models.RegisterModel",
+              "Method": "get_lbl_ErrorMSG",
+              "MethodFullName": "System.String api.Models.RegisterModel::get_lbl_ErrorMSG()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 44,
+              "StartLine": 21,
+              "EndLine": 21,
+              "StartColumn": 43,
+              "EndColumn": 47,
+              "Class": "api.Models.RegisterModel",
+              "Method": "set_lbl_ErrorMSG",
+              "MethodFullName": "System.Void api.Models.RegisterModel::set_lbl_ErrorMSG(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            }
+          ]
+        },
+        "src/api/Models/UtilityContext.cs": {
+          "Instructions": [
+            {
+              "Id": 45,
+              "StartLine": 11,
+              "EndLine": 11,
+              "StartColumn": 13,
+              "EndColumn": 35,
+              "Class": "api.Models.UtilityContext",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Models.UtilityContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<api.Models.UtilityContext>)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 46,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 41,
+              "EndColumn": 45,
+              "Class": "api.Models.UtilityContext",
+              "Method": "get_Zipcode",
+              "MethodFullName": "Microsoft.EntityFrameworkCore.DbSet`1<api.Models.Zipcode> api.Models.UtilityContext::get_Zipcode()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 47,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 46,
+              "EndColumn": 50,
+              "Class": "api.Models.UtilityContext",
+              "Method": "set_Zipcode",
+              "MethodFullName": "System.Void api.Models.UtilityContext::set_Zipcode(Microsoft.EntityFrameworkCore.DbSet`1<api.Models.Zipcode>)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 48,
+              "StartLine": 19,
+              "EndLine": 20,
+              "StartColumn": 13,
+              "EndColumn": 93,
+              "Class": "api.Models.UtilityContext",
+              "Method": "OnModelCreating",
+              "MethodFullName": "System.Void api.Models.UtilityContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)",
+              "Instruction": "IL_0001: ldarg modelBuilder"
+            }
+          ]
+        },
+        "src/api/Models/Zipcode.cs": {
+          "Instructions": [
+            {
+              "Id": 49,
+              "StartLine": 11,
+              "EndLine": 11,
+              "StartColumn": 36,
+              "EndColumn": 40,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_PROVINCE_CODE",
+              "MethodFullName": "System.Int32 api.Models.Zipcode::get_PROVINCE_CODE()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 50,
+              "StartLine": 11,
+              "EndLine": 11,
+              "StartColumn": 41,
+              "EndColumn": 45,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_PROVINCE_CODE",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_PROVINCE_CODE(System.Int32)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 51,
+              "StartLine": 12,
+              "EndLine": 12,
+              "StartColumn": 34,
+              "EndColumn": 38,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_AMPHUR_CODE",
+              "MethodFullName": "System.Int32 api.Models.Zipcode::get_AMPHUR_CODE()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 52,
+              "StartLine": 12,
+              "EndLine": 12,
+              "StartColumn": 39,
+              "EndColumn": 43,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_AMPHUR_CODE",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_AMPHUR_CODE(System.Int32)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 53,
+              "StartLine": 13,
+              "EndLine": 13,
+              "StartColumn": 34,
+              "EndColumn": 38,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_TAMBOL_CODE",
+              "MethodFullName": "System.Int32 api.Models.Zipcode::get_TAMBOL_CODE()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 54,
+              "StartLine": 13,
+              "EndLine": 13,
+              "StartColumn": 39,
+              "EndColumn": 43,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_TAMBOL_CODE",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_TAMBOL_CODE(System.Int32)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 55,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 31,
+              "EndColumn": 35,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_ZIP_CODE",
+              "MethodFullName": "System.Int32 api.Models.Zipcode::get_ZIP_CODE()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 56,
+              "StartLine": 14,
+              "EndLine": 14,
+              "StartColumn": 36,
+              "EndColumn": 40,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_ZIP_CODE",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_ZIP_CODE(System.Int32)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 57,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 37,
+              "EndColumn": 41,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_REGION_CODE",
+              "MethodFullName": "System.String api.Models.Zipcode::get_REGION_CODE()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 58,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 42,
+              "EndColumn": 46,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_REGION_CODE",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_REGION_CODE(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 59,
+              "StartLine": 16,
+              "EndLine": 16,
+              "StartColumn": 42,
+              "EndColumn": 46,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_THAI_DESCRIPTION",
+              "MethodFullName": "System.String api.Models.Zipcode::get_THAI_DESCRIPTION()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 60,
+              "StartLine": 16,
+              "EndLine": 16,
+              "StartColumn": 47,
+              "EndColumn": 51,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_THAI_DESCRIPTION",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_THAI_DESCRIPTION(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 61,
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 32,
+              "EndColumn": 36,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_FILLER",
+              "MethodFullName": "System.String api.Models.Zipcode::get_FILLER()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 62,
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 37,
+              "EndColumn": 41,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_FILLER",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_FILLER(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 63,
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 32,
+              "EndColumn": 36,
+              "Class": "api.Models.Zipcode",
+              "Method": "get_STATUS",
+              "MethodFullName": "System.String api.Models.Zipcode::get_STATUS()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 64,
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 37,
+              "EndColumn": 41,
+              "Class": "api.Models.Zipcode",
+              "Method": "set_STATUS",
+              "MethodFullName": "System.Void api.Models.Zipcode::set_STATUS(System.String)",
+              "Instruction": "IL_0000: ldarg "
+            }
+          ]
+        },
+        "src/api/Services/MemberService.cs": {
+          "Instructions": [
+            {
+              "Id": 1,
+              "StartLine": 13,
+              "EndLine": 13,
+              "StartColumn": 9,
+              "EndColumn": 52,
+              "Class": "api.Services.MemberService",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Services.MemberService::.ctor(api.Models.MemberContext)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 2,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 13,
+              "EndColumn": 32,
+              "Class": "api.Services.MemberService",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Services.MemberService::.ctor(api.Models.MemberContext)",
+              "Instruction": "IL_0008: ldarg "
+            },
+            {
+              "Id": 3,
+              "StartLine": 20,
+              "EndLine": 20,
+              "StartColumn": 13,
+              "EndColumn": 88,
+              "Class": "api.Services.MemberService",
+              "Method": "Get_Member_Information_By_ID",
+              "MethodFullName": "api.Models.Member api.Services.MemberService::Get_Member_Information_By_ID(System.String)",
+              "Instruction": "IL_000e: ldarg "
+            },
+            {
+              "Id": 4,
+              "StartLine": 25,
+              "EndLine": 25,
+              "StartColumn": 13,
+              "EndColumn": 46,
+              "Class": "api.Services.MemberService",
+              "Method": "List_Members",
+              "MethodFullName": "System.Collections.Generic.IEnumerable`1<api.Models.Member> api.Services.MemberService::List_Members()",
+              "Instruction": "IL_0001: ldarg "
+            },
+            {
+              "Id": 5,
+              "StartLine": 30,
+              "EndLine": 30,
+              "StartColumn": 13,
+              "EndColumn": 32,
+              "Class": "api.Services.MemberService",
+              "Method": "Add_Members",
+              "MethodFullName": "api.Models.Member api.Services.MemberService::Add_Members(api.Models.Member)",
+              "Instruction": "IL_0001: ldarg "
+            },
+            {
+              "Id": 6,
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 13,
+              "EndColumn": 36,
+              "Class": "api.Services.MemberService",
+              "Method": "Add_Members",
+              "MethodFullName": "api.Models.Member api.Services.MemberService::Add_Members(api.Models.Member)",
+              "Instruction": "IL_000e: ldarg "
+            },
+            {
+              "Id": 7,
+              "StartLine": 33,
+              "EndLine": 33,
+              "StartColumn": 13,
+              "EndColumn": 25,
+              "Class": "api.Services.MemberService",
+              "Method": "Add_Members",
+              "MethodFullName": "api.Models.Member api.Services.MemberService::Add_Members(api.Models.Member)",
+              "Instruction": "IL_001a: ldarg data"
+            }
+          ]
+        },
+        "src/api/Services/UtilityService.cs": {
+          "Instructions": [
+            {
+              "Id": 8,
+              "StartLine": 16,
+              "EndLine": 16,
+              "StartColumn": 9,
+              "EndColumn": 54,
+              "Class": "api.Services.UtilityService",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Services.UtilityService::.ctor(api.Models.UtilityContext)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 9,
+              "StartLine": 18,
+              "EndLine": 18,
+              "StartColumn": 13,
+              "EndColumn": 32,
+              "Class": "api.Services.UtilityService",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Services.UtilityService::.ctor(api.Models.UtilityContext)",
+              "Instruction": "IL_0008: ldarg "
+            },
+            {
+              "Id": 10,
+              "StartLine": 23,
+              "EndLine": 23,
+              "StartColumn": 13,
+              "EndColumn": 46,
+              "Class": "api.Services.UtilityService",
+              "Method": "ListZipcode",
+              "MethodFullName": "System.Collections.Generic.IEnumerable`1<api.Models.Zipcode> api.Services.UtilityService::ListZipcode()",
+              "Instruction": "IL_0001: ldarg "
+            },
+            {
+              "Id": 11,
+              "StartLine": 28,
+              "EndLine": 33,
+              "StartColumn": 13,
+              "EndColumn": 31,
+              "Class": "api.Services.UtilityService",
+              "Method": "ListZipcode_by_Province_Code",
+              "MethodFullName": "System.Collections.Generic.IEnumerable`1<api.Models.Zipcode> api.Services.UtilityService::ListZipcode_by_Province_Code(System.String)",
+              "Instruction": "IL_000e: ldarg "
+            },
+            {
+              "Id": 12,
+              "StartLine": 35,
+              "EndLine": 35,
+              "StartColumn": 13,
+              "EndColumn": 31,
+              "Class": "api.Services.UtilityService",
+              "Method": "ListZipcode_by_Province_Code",
+              "MethodFullName": "System.Collections.Generic.IEnumerable`1<api.Models.Zipcode> api.Services.UtilityService::ListZipcode_by_Province_Code(System.String)",
+              "Instruction": "IL_0197: ldloc V_1"
+            },
+            {
+              "Id": 13,
+              "StartLine": 38,
+              "EndLine": 38,
+              "StartColumn": 47,
+              "EndColumn": 51,
+              "Class": "api.Services.UtilityService",
+              "Method": "get_Configuration",
+              "MethodFullName": "Microsoft.Extensions.Configuration.IConfiguration api.Services.UtilityService::get_Configuration()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 14,
+              "StartLine": 38,
+              "EndLine": 38,
+              "StartColumn": 52,
+              "EndColumn": 56,
+              "Class": "api.Services.UtilityService",
+              "Method": "set_Configuration",
+              "MethodFullName": "System.Void api.Services.UtilityService::set_Configuration(Microsoft.Extensions.Configuration.IConfiguration)",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 15,
+              "StartLine": 41,
+              "EndLine": 41,
+              "StartColumn": 13,
+              "EndColumn": 92,
+              "Class": "api.Services.UtilityService",
+              "Method": "Get_Config_Text",
+              "MethodFullName": "System.String api.Services.UtilityService::Get_Config_Text()",
+              "Instruction": "IL_0001: ldstr \"ASPNETCORE_ENVIRONMENT\""
+            },
+            {
+              "Id": 16,
+              "StartLine": 43,
+              "EndLine": 46,
+              "StartColumn": 13,
+              "EndColumn": 75,
+              "Class": "api.Services.UtilityService",
+              "Method": "Get_Config_Text",
+              "MethodFullName": "System.String api.Services.UtilityService::Get_Config_Text()",
+              "Instruction": "IL_000c: newobj System.Void Microsoft.Extensions.Configuration.ConfigurationBuilder::.ctor()"
+            },
+            {
+              "Id": 17,
+              "StartLine": 48,
+              "EndLine": 48,
+              "StartColumn": 13,
+              "EndColumn": 45,
+              "Class": "api.Services.UtilityService",
+              "Method": "Get_Config_Text",
+              "MethodFullName": "System.String api.Services.UtilityService::Get_Config_Text()",
+              "Instruction": "IL_0037: ldarg "
+            },
+            {
+              "Id": 18,
+              "StartLine": 50,
+              "EndLine": 50,
+              "StartColumn": 13,
+              "EndColumn": 47,
+              "Class": "api.Services.UtilityService",
+              "Method": "Get_Config_Text",
+              "MethodFullName": "System.String api.Services.UtilityService::Get_Config_Text()",
+              "Instruction": "IL_0044: ldarg "
+            }
+          ]
+        }
+      },
+      "Locations": [
+        {
+          "File": "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest/bin/Debug/netcoreapp2.0/api.dll",
+          "BackupFile": "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest/bin/Debug/netcoreapp2.0/api.uninstrumented.dll",
+          "PdbFile": "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest/bin/Debug/netcoreapp2.0/api.pdb",
+          "BackupPdbFile": "/Users/ifew/www_customer/easybuy/lab/tests/api.IntegrationTest/bin/Debug/netcoreapp2.0/api.uninstrumented.pdb"
+        }
+      ]
+    }
+  ]
+}

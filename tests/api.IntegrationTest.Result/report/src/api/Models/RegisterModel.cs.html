@@ -1,0 +1,27 @@
+<html>
+<body style="font-family: monospace;">
+<div style="white-space: pre;background-color: #EEF4ED;">using System;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.ComponentModel.DataAnnotations;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">namespace api.Models</div>
+<div style="white-space: pre;background-color: #EEF4ED;">{</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    public class RegisterModel</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    {</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [Required(ErrorMessage = &quot;กรุณาระบุหมายเลขบัตรยูเมะพลัสค่ะ&quot;)]</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [StringLength(16, MinimumLength = 16, ErrorMessage = &quot;หมายเลขบัตรยูเมะพลัสไม่ถูกต้อง กรุณาระบุ 16 หลักค่ะ&quot;)]</div>
+<div style="white-space: pre;background-color: #EACECC;">        public string txt_CardNo { get; set; }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [Required(ErrorMessage = &quot;กรุณาระบุหมายเลขบัตรประชาชนค่ะ&quot;)]</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [StringLength(13, MinimumLength = 13, ErrorMessage = &quot;หมายเลขบัตรประชาชนไม่ถูกต้อง กรุณาระบุ 13 หลักค่ะ&quot;)]</div>
+<div style="white-space: pre;background-color: #EACECC;">        public string txt_CardID { get; set; }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [Required(ErrorMessage = &quot;กรุณาระบุวันเดือนปีเกิดค่ะ&quot;)]</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        [StringLength(10, MinimumLength = 10, ErrorMessage = &quot;กรุณากรอกข้อมูล วัน/เดือน/ปี พ.ศ.&quot;)]</div>
+<div style="white-space: pre;background-color: #EACECC;">        public string txt_BirthDate { get; set; }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">        public string txt_MobileNo { get; set; }</div>
+<div style="white-space: pre;background-color: #EACECC;">        public string lbl_ErrorMSG { get; set; }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">}</div>
+</body>
+</html>

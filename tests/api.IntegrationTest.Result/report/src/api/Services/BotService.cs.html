@@ -1,0 +1,44 @@
+<html>
+<body style="font-family: monospace;">
+<div style="white-space: pre;background-color: #EEF4ED;">using System;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Collections.Generic;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Globalization;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Linq;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Net.Http;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Net.Http.Headers;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Threading.Tasks;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using api.Models;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using Newtonsoft.Json;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">namespace api.Services</div>
+<div style="white-space: pre;background-color: #EEF4ED;">{</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    public class BotService</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    {</div>
+<div style="white-space: pre;background-color: #EACECC;">        private static readonly HttpClient client = new HttpClient();</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #D2EACE;">        public BotService()</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        public object ExchangeRateDailyAverage(string start_date=&quot;2002-01-12&quot;, string end_date=&quot;2002-01-15&quot;, string currency=&quot;USD&quot;)</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #D2EACE;">            string url = &quot;https://iapi.bot.or.th/Stat/Stat-ExchangeRate/DAILY_AVG_EXG_RATE_V1/?start_period=&quot;+start_date+&quot;&amp;end_period=&quot;+end_date+&quot;&amp;currency=&quot;+currency;</div>
+<div style="white-space: pre;background-color: #D2EACE;">            object result = CallGet(url).Result;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #D2EACE;">            return result;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        static async Task&lt;object&gt; CallGet(string url)</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #D2EACE;">            HttpClient client = new HttpClient();</div>
+<div style="white-space: pre;background-color: #D2EACE;">            client.DefaultRequestHeaders.Add(&quot;api-key&quot;, &quot;U9G1L457H6DCugT7VmBaEacbHV9RX0PySO05cYaGsm&quot;);</div>
+<div style="white-space: pre;background-color: #D2EACE;">            var response = await client.GetStringAsync(url);</div>
+<div style="white-space: pre;background-color: #D2EACE;">            var repositories = JsonConvert.DeserializeObject&lt;object&gt;(response);</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #D2EACE;">            return repositories;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">}</div>
+</body>
+</html>

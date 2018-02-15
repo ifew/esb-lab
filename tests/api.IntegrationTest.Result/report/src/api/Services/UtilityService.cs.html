@@ -1,0 +1,58 @@
+<html>
+<body style="font-family: monospace;">
+<div style="white-space: pre;background-color: #EEF4ED;">using System;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Collections.Generic;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Globalization;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.IO;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using System.Linq;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using api.Models;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using Microsoft.AspNetCore.Hosting;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">using Microsoft.Extensions.Configuration;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">namespace api.Services</div>
+<div style="white-space: pre;background-color: #EEF4ED;">{</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    public class UtilityService</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    {</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        private readonly UtilityContext _context;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">        public UtilityService(UtilityContext context)</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #EACECC;">            _context = context;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        public IEnumerable&lt;Zipcode&gt; ListZipcode()</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #EACECC;">            return _context.Zipcode.ToList();</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        public IEnumerable&lt;Zipcode&gt; ListZipcode_by_Province_Code(string id)</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #EACECC;">            IEnumerable&lt;Zipcode&gt; listResult = _context.Zipcode</div>
+<div style="white-space: pre;background-color: #EACECC;">                    .Where(m =&gt; m.PROVINCE_CODE == int.Parse(id) &amp;&amp; m.ZIP_CODE != 0 )</div>
+<div style="white-space: pre;background-color: #EACECC;">                    .GroupBy(m =&gt; m.ZIP_CODE)</div>
+<div style="white-space: pre;background-color: #EACECC;">                    .Select(m =&gt; m.FirstOrDefault())</div>
+<div style="white-space: pre;background-color: #EACECC;">                    .OrderBy(m =&gt; m.ZIP_CODE)</div>
+<div style="white-space: pre;background-color: #EACECC;">                    .ToList();</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">            return listResult;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">        public IConfiguration Configuration { get; set;}</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        public String Get_Config_Text()</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        {</div>
+<div style="white-space: pre;background-color: #EACECC;">            var environment = Environment.GetEnvironmentVariable(&quot;ASPNETCORE_ENVIRONMENT&quot;);</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">            var builder = new ConfigurationBuilder()</div>
+<div style="white-space: pre;background-color: #EACECC;">                .SetBasePath(Directory.GetCurrentDirectory())</div>
+<div style="white-space: pre;background-color: #EACECC;">                .AddJsonFile(&quot;appsettings.json&quot;)</div>
+<div style="white-space: pre;background-color: #EACECC;">		        .AddJsonFile($&quot;appsettings.{environment}.json&quot;, optional: true);</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">            Configuration = builder.Build();</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EACECC;">            return Configuration[&quot;Test:Name&quot;];</div>
+<div style="white-space: pre;background-color: #EEF4ED;">        }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">    }</div>
+<div style="white-space: pre;background-color: #EEF4ED;">&nbsp;</div>
+<div style="white-space: pre;background-color: #EEF4ED;">}</div>
+</body>
+</html>
