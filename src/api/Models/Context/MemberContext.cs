@@ -11,11 +11,11 @@ namespace api.Models
         {
         }
 
-        public DbSet<Member> Members { get; set; }
+        public DbSet<MemberModel> Members { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Member>()
+            modelBuilder.Entity<MemberModel>()
                         .HasKey(m => m.Id);
         }
     }

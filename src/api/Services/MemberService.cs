@@ -15,17 +15,17 @@ namespace api.Services
             _context = context;
         }
 
-        public Member Get_Member_Information_By_ID(string id)
+        public MemberModel Get_Member_Information_By_ID(string id)
         {
             return _context.Members.Where(m => m.Id == int.Parse(id)).FirstOrDefault();
         }
 
-        public IEnumerable<Member> List_Members()
+        public IEnumerable<MemberModel> List_Members()
         {
             return _context.Members.ToList();
         }
 
-        public Member Add_Members(Member data)
+        public MemberModel Add_Members(MemberModel data)
         {
             _context.Add(data);
             _context.SaveChanges();
