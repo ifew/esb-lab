@@ -39,5 +39,15 @@ namespace api.Controllers
             object result = _service.ExchangeRateDailyAverage(start_date, end_date, currency);
             return Json(result);
         }
+
+        /// <summary>
+        /// Get Exchange Rate Average by daily from BOT
+        /// </summary>
+        [HttpGet("exchange_rate/daily_average_fee/{start_date}/{end_date}/{currency}")]
+        public JsonResult ExchangeRateDailyAverageWithFee(string start_date, string end_date, string currency)
+        {
+            object result = _service.ExchangeRateDailyAverageWithFee(start_date, end_date, currency);
+            return Json(result);
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Stubbery;
 using api.UnitTest.Models;
+using api.Services;
 
 namespace api.UnitTest
 {
@@ -18,6 +19,28 @@ namespace api.UnitTest
 
         public BotTest()
         {
+        }
+
+        [Fact]
+        public void When_Input_35_3182000_And_Get_Fee_3percent()
+        {
+            var expected = "1.059546";
+
+            BotService botService = new BotService();
+            var actual = botService.GetFeeFromExchangeRate(35.3182000);
+
+            Assert.Equal(expected, actual.ToString());
+        }
+
+        [Fact]
+        public void When_Get_Selling_35_3182000_And_Plus_Fee_3percent()
+        {
+            var expected = "36.38";
+
+            BotService botService = new BotService();
+            var actual = botService.ExchangeRateDailyAverageWithFee("2017-02-01","2017-02-01","USD");
+
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
