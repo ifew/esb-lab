@@ -294,3 +294,8 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+
+.sonarqube
+tests/api.IntegrationTest.Result
+tests/api.UnitTest.Result

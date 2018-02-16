@@ -11,7 +11,7 @@
         "src/api/Models/Member.cs": {
           "Instructions": [
             {
-              "Id": 19,
+              "Id": 34,
               "StartLine": 12,
               "EndLine": 12,
               "StartColumn": 25,
@@ -22,7 +22,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 20,
+              "Id": 35,
               "StartLine": 12,
               "EndLine": 12,
               "StartColumn": 30,
@@ -33,7 +33,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 21,
+              "Id": 36,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 34,
@@ -44,7 +44,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 22,
+              "Id": 37,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 39,
@@ -55,7 +55,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 23,
+              "Id": 38,
               "StartLine": 20,
               "EndLine": 20,
               "StartColumn": 33,
@@ -66,7 +66,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 24,
+              "Id": 39,
               "StartLine": 20,
               "EndLine": 20,
               "StartColumn": 38,
@@ -77,7 +77,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 25,
+              "Id": 40,
               "StartLine": 25,
               "EndLine": 25,
               "StartColumn": 37,
@@ -88,7 +88,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 26,
+              "Id": 41,
               "StartLine": 25,
               "EndLine": 25,
               "StartColumn": 42,
@@ -99,7 +99,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 27,
+              "Id": 42,
               "StartLine": 29,
               "EndLine": 29,
               "StartColumn": 36,
@@ -110,7 +110,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 28,
+              "Id": 43,
               "StartLine": 29,
               "EndLine": 29,
               "StartColumn": 41,
@@ -121,7 +121,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 29,
+              "Id": 44,
               "StartLine": 34,
               "EndLine": 34,
               "StartColumn": 37,
@@ -132,7 +132,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 30,
+              "Id": 45,
               "StartLine": 34,
               "EndLine": 34,
               "StartColumn": 42,
@@ -147,7 +147,7 @@
         "src/api/Models/MemberContext.cs": {
           "Instructions": [
             {
-              "Id": 31,
+              "Id": 46,
               "StartLine": 10,
               "EndLine": 10,
               "StartColumn": 13,
@@ -158,7 +158,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 32,
+              "Id": 47,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 40,
@@ -169,7 +169,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 33,
+              "Id": 48,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 45,
@@ -180,7 +180,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 34,
+              "Id": 49,
               "StartLine": 18,
               "EndLine": 19,
               "StartColumn": 13,
@@ -195,7 +195,7 @@
         "src/api/Models/RegisterModel.cs": {
           "Instructions": [
             {
-              "Id": 35,
+              "Id": 50,
               "StartLine": 10,
               "EndLine": 10,
               "StartColumn": 36,
@@ -206,7 +206,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 36,
+              "Id": 51,
               "StartLine": 10,
               "EndLine": 10,
               "StartColumn": 41,
@@ -217,7 +217,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 37,
+              "Id": 52,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 36,
@@ -228,7 +228,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 38,
+              "Id": 53,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 41,
@@ -239,7 +239,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 39,
+              "Id": 54,
               "StartLine": 18,
               "EndLine": 18,
               "StartColumn": 39,
@@ -250,7 +250,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 40,
+              "Id": 55,
               "StartLine": 18,
               "EndLine": 18,
               "StartColumn": 44,
@@ -261,7 +261,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 41,
+              "Id": 56,
               "StartLine": 20,
               "EndLine": 20,
               "StartColumn": 38,
@@ -272,7 +272,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 42,
+              "Id": 57,
               "StartLine": 20,
               "EndLine": 20,
               "StartColumn": 43,
@@ -283,7 +283,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 43,
+              "Id": 58,
               "StartLine": 21,
               "EndLine": 21,
               "StartColumn": 38,
@@ -294,7 +294,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 44,
+              "Id": 59,
               "StartLine": 21,
               "EndLine": 21,
               "StartColumn": 43,
@@ -309,7 +309,7 @@
         "src/api/Models/UtilityContext.cs": {
           "Instructions": [
             {
-              "Id": 45,
+              "Id": 60,
               "StartLine": 11,
               "EndLine": 11,
               "StartColumn": 13,
@@ -320,7 +320,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 46,
+              "Id": 61,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 41,
@@ -331,7 +331,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 47,
+              "Id": 62,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 46,
@@ -342,7 +342,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 48,
+              "Id": 63,
               "StartLine": 19,
               "EndLine": 20,
               "StartColumn": 13,
@@ -357,7 +357,7 @@
         "src/api/Models/Zipcode.cs": {
           "Instructions": [
             {
-              "Id": 49,
+              "Id": 64,
               "StartLine": 11,
               "EndLine": 11,
               "StartColumn": 36,
@@ -368,7 +368,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 50,
+              "Id": 65,
               "StartLine": 11,
               "EndLine": 11,
               "StartColumn": 41,
@@ -379,7 +379,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 51,
+              "Id": 66,
               "StartLine": 12,
               "EndLine": 12,
               "StartColumn": 34,
@@ -390,7 +390,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 52,
+              "Id": 67,
               "StartLine": 12,
               "EndLine": 12,
               "StartColumn": 39,
@@ -401,7 +401,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 53,
+              "Id": 68,
               "StartLine": 13,
               "EndLine": 13,
               "StartColumn": 34,
@@ -412,7 +412,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 54,
+              "Id": 69,
               "StartLine": 13,
               "EndLine": 13,
               "StartColumn": 39,
@@ -423,7 +423,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 55,
+              "Id": 70,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 31,
@@ -434,7 +434,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 56,
+              "Id": 71,
               "StartLine": 14,
               "EndLine": 14,
               "StartColumn": 36,
@@ -445,7 +445,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 57,
+              "Id": 72,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 37,
@@ -456,7 +456,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 58,
+              "Id": 73,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 42,
@@ -467,7 +467,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 59,
+              "Id": 74,
               "StartLine": 16,
               "EndLine": 16,
               "StartColumn": 42,
@@ -478,7 +478,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 60,
+              "Id": 75,
               "StartLine": 16,
               "EndLine": 16,
               "StartColumn": 47,
@@ -489,7 +489,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 61,
+              "Id": 76,
               "StartLine": 17,
               "EndLine": 17,
               "StartColumn": 32,
@@ -500,7 +500,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 62,
+              "Id": 77,
               "StartLine": 17,
               "EndLine": 17,
               "StartColumn": 37,
@@ -511,7 +511,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 63,
+              "Id": 78,
               "StartLine": 18,
               "EndLine": 18,
               "StartColumn": 32,
@@ -522,7 +522,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 64,
+              "Id": 79,
               "StartLine": 18,
               "EndLine": 18,
               "StartColumn": 37,
@@ -534,10 +534,179 @@
             }
           ]
         },
-        "src/api/Services/MemberService.cs": {
+        "src/api/Services/BotService.cs": {
           "Instructions": [
             {
               "Id": 1,
+              "StartLine": 17,
+              "EndLine": 17,
+              "StartColumn": 9,
+              "EndColumn": 28,
+              "Class": "api.Services.BotService",
+              "Method": ".ctor",
+              "MethodFullName": "System.Void api.Services.BotService::.ctor()",
+              "Instruction": "IL_0000: ldarg "
+            },
+            {
+              "Id": 2,
+              "StartLine": 23,
+              "EndLine": 23,
+              "StartColumn": 13,
+              "EndColumn": 168,
+              "Class": "api.Services.BotService",
+              "Method": "ExchangeRateDailyAverage",
+              "MethodFullName": "System.Object api.Services.BotService::ExchangeRateDailyAverage(System.String,System.String,System.String)",
+              "Instruction": "IL_0001: ldc.i4 6"
+            },
+            {
+              "Id": 3,
+              "StartLine": 24,
+              "EndLine": 24,
+              "StartColumn": 13,
+              "EndColumn": 49,
+              "Class": "api.Services.BotService",
+              "Method": "ExchangeRateDailyAverage",
+              "MethodFullName": "System.Object api.Services.BotService::ExchangeRateDailyAverage(System.String,System.String,System.String)",
+              "Instruction": "IL_0031: ldloc V_0"
+            },
+            {
+              "Id": 4,
+              "StartLine": 26,
+              "EndLine": 26,
+              "StartColumn": 13,
+              "EndColumn": 27,
+              "Class": "api.Services.BotService",
+              "Method": "ExchangeRateDailyAverage",
+              "MethodFullName": "System.Object api.Services.BotService::ExchangeRateDailyAverage(System.String,System.String,System.String)",
+              "Instruction": "IL_003d: ldloc V_1"
+            },
+            {
+              "Id": 5,
+              "StartLine": 15,
+              "EndLine": 15,
+              "StartColumn": 9,
+              "EndColumn": 70,
+              "Class": "api.Services.BotService",
+              "Method": ".cctor",
+              "MethodFullName": "System.Void api.Services.BotService::.cctor()",
+              "Instruction": "IL_0000: newobj System.Void System.Net.Http.HttpClient::.ctor()"
+            },
+            {
+              "Id": 6,
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 13,
+              "EndColumn": 50,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_000f: ldarg "
+            },
+            {
+              "Id": 7,
+              "StartLine": 32,
+              "EndLine": 32,
+              "StartColumn": 13,
+              "EndColumn": 103,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_001a: ldarg "
+            },
+            {
+              "Id": 8,
+              "StartLine": 33,
+              "EndLine": 33,
+              "StartColumn": 13,
+              "EndColumn": 61,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_0035: ldarg "
+            },
+            {
+              "Id": 9,
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 13,
+              "EndColumn": 80,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_00b8: ldarg "
+            },
+            {
+              "Id": 10,
+              "StartLine": 36,
+              "EndLine": 36,
+              "StartColumn": 13,
+              "EndColumn": 33,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_00c9: ldarg "
+            },
+            {
+              "Id": 11,
+              "StartLine": 31,
+              "EndLine": 31,
+              "StartColumn": 13,
+              "EndColumn": 50,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_000f: ldarg "
+            },
+            {
+              "Id": 12,
+              "StartLine": 32,
+              "EndLine": 32,
+              "StartColumn": 13,
+              "EndColumn": 103,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_001a: ldarg "
+            },
+            {
+              "Id": 13,
+              "StartLine": 33,
+              "EndLine": 33,
+              "StartColumn": 13,
+              "EndColumn": 61,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_0035: ldarg "
+            },
+            {
+              "Id": 14,
+              "StartLine": 34,
+              "EndLine": 34,
+              "StartColumn": 13,
+              "EndColumn": 80,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_00b8: ldarg "
+            },
+            {
+              "Id": 15,
+              "StartLine": 36,
+              "EndLine": 36,
+              "StartColumn": 13,
+              "EndColumn": 33,
+              "Class": "api.Services.BotService/<CallGet>d__3",
+              "Method": "MoveNext",
+              "MethodFullName": "System.Void api.Services.BotService/<CallGet>d__3::MoveNext()",
+              "Instruction": "IL_00c9: ldarg "
+            }
+          ]
+        },
+        "src/api/Services/MemberService.cs": {
+          "Instructions": [
+            {
+              "Id": 16,
               "StartLine": 13,
               "EndLine": 13,
               "StartColumn": 9,
@@ -548,7 +717,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 2,
+              "Id": 17,
               "StartLine": 15,
               "EndLine": 15,
               "StartColumn": 13,
@@ -559,7 +728,7 @@
               "Instruction": "IL_0008: ldarg "
             },
             {
-              "Id": 3,
+              "Id": 18,
               "StartLine": 20,
               "EndLine": 20,
               "StartColumn": 13,
@@ -570,7 +739,7 @@
               "Instruction": "IL_000e: ldarg "
             },
             {
-              "Id": 4,
+              "Id": 19,
               "StartLine": 25,
               "EndLine": 25,
               "StartColumn": 13,
@@ -581,7 +750,7 @@
               "Instruction": "IL_0001: ldarg "
             },
             {
-              "Id": 5,
+              "Id": 20,
               "StartLine": 30,
               "EndLine": 30,
               "StartColumn": 13,
@@ -592,7 +761,7 @@
               "Instruction": "IL_0001: ldarg "
             },
             {
-              "Id": 6,
+              "Id": 21,
               "StartLine": 31,
               "EndLine": 31,
               "StartColumn": 13,
@@ -603,7 +772,7 @@
               "Instruction": "IL_000e: ldarg "
             },
             {
-              "Id": 7,
+              "Id": 22,
               "StartLine": 33,
               "EndLine": 33,
               "StartColumn": 13,
@@ -618,7 +787,7 @@
         "src/api/Services/UtilityService.cs": {
           "Instructions": [
             {
-              "Id": 8,
+              "Id": 23,
               "StartLine": 16,
               "EndLine": 16,
               "StartColumn": 9,
@@ -629,7 +798,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 9,
+              "Id": 24,
               "StartLine": 18,
               "EndLine": 18,
               "StartColumn": 13,
@@ -640,7 +809,7 @@
               "Instruction": "IL_0008: ldarg "
             },
             {
-              "Id": 10,
+              "Id": 25,
               "StartLine": 23,
               "EndLine": 23,
               "StartColumn": 13,
@@ -651,7 +820,7 @@
               "Instruction": "IL_0001: ldarg "
             },
             {
-              "Id": 11,
+              "Id": 26,
               "StartLine": 28,
               "EndLine": 33,
               "StartColumn": 13,
@@ -662,7 +831,7 @@
               "Instruction": "IL_000e: ldarg "
             },
             {
-              "Id": 12,
+              "Id": 27,
               "StartLine": 35,
               "EndLine": 35,
               "StartColumn": 13,
@@ -673,7 +842,7 @@
               "Instruction": "IL_0197: ldloc V_1"
             },
             {
-              "Id": 13,
+              "Id": 28,
               "StartLine": 38,
               "EndLine": 38,
               "StartColumn": 47,
@@ -684,7 +853,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 14,
+              "Id": 29,
               "StartLine": 38,
               "EndLine": 38,
               "StartColumn": 52,
@@ -695,7 +864,7 @@
               "Instruction": "IL_0000: ldarg "
             },
             {
-              "Id": 15,
+              "Id": 30,
               "StartLine": 41,
               "EndLine": 41,
               "StartColumn": 13,
@@ -706,7 +875,7 @@
               "Instruction": "IL_0001: ldstr \"ASPNETCORE_ENVIRONMENT\""
             },
             {
-              "Id": 16,
+              "Id": 31,
               "StartLine": 43,
               "EndLine": 46,
               "StartColumn": 13,
@@ -717,7 +886,7 @@
               "Instruction": "IL_000c: newobj System.Void Microsoft.Extensions.Configuration.ConfigurationBuilder::.ctor()"
             },
             {
-              "Id": 17,
+              "Id": 32,
               "StartLine": 48,
               "EndLine": 48,
               "StartColumn": 13,
@@ -728,7 +897,7 @@
               "Instruction": "IL_0037: ldarg "
             },
             {
-              "Id": 18,
+              "Id": 33,
               "StartLine": 50,
               "EndLine": 50,
               "StartColumn": 13,
