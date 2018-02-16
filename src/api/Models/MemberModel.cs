@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace api.Models
 {
     [Table("members")]
-    public class Member
+    public class MemberModel
     {
         [Column("id")]
         public int Id { get; set; }
