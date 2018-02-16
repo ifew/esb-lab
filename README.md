@@ -1,3 +1,5 @@
+![SonarQUbe](https://sonarcloud.io/api/project_badges/measure?project=netcore-lab&metric=alert_status)
+
 # netcore-lab
 
 For my learning .NET CORE 2
