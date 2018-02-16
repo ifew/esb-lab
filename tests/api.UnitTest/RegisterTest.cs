@@ -18,7 +18,7 @@ namespace api.UnitTest
             var _context = new MemberContext(_options);
 
             _context.Members.Add(
-                new Member
+                new MemberModel
                 {
                     Id = 1,
                     Fullname = "iFew",
@@ -31,7 +31,7 @@ namespace api.UnitTest
 
 
             MemberService _memberService = new MemberService(_context);
-            Member actual = _memberService.Get_Member_Information_By_ID("1");
+            MemberModel actual = _memberService.Get_Member_Information_By_ID("1");
 
             Assert.Equal(1, actual.Id);
             Assert.Equal("iFew", actual.Fullname);
@@ -50,7 +50,7 @@ namespace api.UnitTest
             var _context = new MemberContext(_options);
 
             _context.Members.Add(
-                new Member
+                new MemberModel
                 {
                     Id = 1,
                     Fullname = "iFew",
@@ -60,7 +60,7 @@ namespace api.UnitTest
                     Mobilephone = "092224955"
                 });
             _context.Members.Add(
-                new Member
+                new MemberModel
                 {
                     Id = 2,
                     Fullname = "Test",

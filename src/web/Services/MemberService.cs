@@ -10,19 +10,19 @@ namespace web.Services
 {
     public class MemberService
     {
+        private readonly string _urlAPI = "http://localhost:5001/";
+
         public Member Register(Member member)
         {
-            string url = "http://localhost:5001/api/member/register";
+            string url = _urlAPI + "api/member/register";
             Member result = Call(url, member).Result;
-            //Member memberModel = (Member)result;
-            //var memberModel = JsonConvert.DeserializeObject<Member>(result);
 
             return result;
         }
 
         public Member Get_Member_Info(string id)
         {
-            string url = "http://localhost:5001/api/member/info/"+id;
+            string url = _urlAPI + "api/member/info/" + id;
             Member result = CallGet(url).Result;
 
             return result;

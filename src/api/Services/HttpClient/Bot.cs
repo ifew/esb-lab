@@ -16,9 +16,9 @@ namespace api.Services
 
         public async Task<RootObject> CallGet(string url)
         {
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("api-key", "U9G1L457H6DCugT7VmBaEacbHV9RX0PySO05cYaGsm");
-            var response = await client.GetStringAsync(url);
+            HttpClient _client = new HttpClient();
+            _client.DefaultRequestHeaders.Add("api-key", "U9G1L457H6DCugT7VmBaEacbHV9RX0PySO05cYaGsm");
+            var response = await _client.GetStringAsync(url);
             var repositories = JsonConvert.DeserializeObject<RootObject>(response);
 
             return repositories;

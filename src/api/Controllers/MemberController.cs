@@ -36,13 +36,13 @@ namespace api.Controllers
         }
 
         [HttpGet("all")]
-        public IEnumerable<Member> GetAll()
+        public IEnumerable<MemberModel> GetAll()
         {
             return _service.List_Members();
         }
 
         [HttpPost("register")]
-        public JsonResult Register([FromBody] Member memberInput)
+        public JsonResult Register([FromBody] MemberModel memberInput)
         {
             var result = _service.Add_Members(memberInput);
 

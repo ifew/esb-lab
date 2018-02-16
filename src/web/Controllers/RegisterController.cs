@@ -29,7 +29,6 @@ namespace web.Controllers
             var memberService = new MemberService();
             Member memberData = memberService.Register(member);
             
-            //return Json(memberData);
             return RedirectToAction("Complete", new { id = memberData.Id });
         }
 
