@@ -35,7 +35,6 @@ namespace api.Services
             return listResult;
         }
 
-        public IConfiguration Configuration { get; set;}
         public String Get_Config_Text()
         {
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
@@ -45,9 +44,9 @@ namespace api.Services
                 .AddJsonFile("appsettings.json")
 		        .AddJsonFile($"appsettings.{environment}.json", optional: true);
 
-            Configuration = builder.Build();
+            var configuration = builder.Build();
 
-            return Configuration["Test:Name"];
+            return configuration["Test:Name"];
         }
     }
 
