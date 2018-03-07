@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
@@ -33,8 +34,22 @@ namespace api.Models
         [StringLength(10, MinimumLength = 10, ErrorMessage = "หมายเลขเบอร์โทรศัพท์ไม่ถูกต้อง กรณาระบุ 10 หลัก ขึ้นต้นด้วย 08")]
         public string Mobilephone { get; set; }
 
+        public List<AddressModel> Addresses { get; set; }
+
     }
 
+    [Table("address")]
+    public class AddressModel
+    {
+        [Column("id")]
+        public int AddressId { get; set; }
+        [Column("member_id")]
+        public int Member_id { get; set; }
 
+        [Column("address")]
+        public string Address { get; set; }
+
+        public MemberModel Members { get; set; }
+    }
 
 }

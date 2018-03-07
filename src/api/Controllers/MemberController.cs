@@ -35,6 +35,16 @@ namespace api.Controllers
             return Json(result);
         }
 
+        /// <summary>
+        /// Get Member addresses from id
+        /// </summary>
+        [HttpGet("address/{id}")]
+        public JsonResult GetAddressById(string id)
+        {
+            var result = _service.Get_Member_Address_By_ID(id);
+            return Json(result);
+        }
+
         [HttpGet("all")]
         public IEnumerable<MemberModel> GetAll()
         {
