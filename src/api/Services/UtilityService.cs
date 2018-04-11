@@ -38,11 +38,17 @@ namespace api.Services
         public String Get_Config_Text()
         {
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+           
+
+            var basePath = Directory.GetCurrentDirectory();
+            if (Directory.GetCurrentDirectory().EndsWith(".IntegrationTest")) {
+                basePath = Path.Combine(basePath, "../../src/api");
+            }
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(basePath)
                 .AddJsonFile("appsettings.json")
-		        .AddJsonFile($"appsettings.{environment}.json", optional: true);
+		        .AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true);
 
             var configuration = builder.Build();
 
