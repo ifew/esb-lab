@@ -4,6 +4,15 @@
 
 For my learning .NET CORE 2
 
+## Set Variable Environment
+export LAB_DBCONNECTION="server=localhost;userid=root;password=1234;database=esb_lab;convert zero datetime=True;"
+
+or set permanant on
+### macOS 11+ (bash)
+~/.bash_profile
+### windows
+Variable Environement
+
 ## Create Database
 Import file *.sql (exclude from GIT)
 
