@@ -13,6 +13,10 @@ or set permanant on
 ### windows
 Variable Environement
 
+## Create Container Database
+docker build -t mysql_db -f Dockerfile_mysql .
+docker run -it -p 3306:3306 -v /Users/ifew/mysql_db:/var/lib/mysql --name mysql_db mysql_db
+
 ## Create Database
 Import file *.sql (exclude from GIT)
 
