@@ -32,8 +32,12 @@ namespace api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MemberContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDbContext<UtilityContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
+            var db_connection = Environment.GetEnvironmentVariable("LAB_DBCONNECTION");
+            
+            services.AddDbContext<MemberContext>(options => options.UseMySQL(db_connection));
+            services.AddDbContext<UtilityContext>(options => options.UseMySQL(db_connection));
+            //services.AddDbContext<MemberContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<UtilityContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<MemberService, MemberService>();
             services.AddScoped<UtilityService, UtilityService>();
             services.AddScoped<BotService, BotService>();
