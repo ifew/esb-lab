@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 
 namespace api.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        public ValuesController()
+        private readonly IStringLocalizer<ValuesController> _localizer;
+        public ValuesController(IStringLocalizer<ValuesController> localizer)
         {
+            _localizer = localizer;
         }
+
 
         // GET api/values
         [HttpGet]
@@ -43,6 +47,12 @@ namespace api.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [HttpGet("test_lang")]
+        public string Test_lang()
+        {
+            return _localizer["Hello"]+' '+_localizer["iFew"];
         }
     }
 }

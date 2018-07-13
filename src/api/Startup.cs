@@ -17,6 +17,8 @@ using System.Text;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
 using Newtonsoft.Json;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace api
 {
@@ -75,6 +77,11 @@ namespace api
                 c.IncludeXmlComments(xmlPath);
             });
 
+            services.AddLocalization(o =>
+            {
+                o.ResourcesPath = "Resources";
+            });
+
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
         }
 
@@ -95,7 +102,26 @@ namespace api
             app.UseAuthentication();
             app.UseCors("CorsPolicy");
 
-            app.UseMvc();
+            app.UseStaticFiles();
+            IList<CultureInfo> supportedCultures = new List<CultureInfo>
+            {
+                new CultureInfo("en-US"),
+                new CultureInfo("th-TH"),
+                new CultureInfo("zh-CN"),
+            };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en-US"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
