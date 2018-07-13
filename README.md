@@ -54,6 +54,6 @@ Authorization Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY4MTM0OD
 
 
 ## Test Multi-Language URL
-/api/values/test_lang?culture=en-US
-/api/values/test_lang?culture=th-TH
-/api/values/test_lang?culture=zh-CN
+- /api/values/test_lang?culture=en-US
+- /api/values/test_lang?culture=th-TH
+- /api/values/test_lang?culture=zh-CN
