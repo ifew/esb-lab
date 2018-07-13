@@ -51,3 +51,9 @@ Header Example to access to http://localhost:5001/api/member/test
 ``
 Authorization Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY4MTM0ODgsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMS8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDEvIn0.Px5vkJovQLNWd3C-RjOhXJSbqL9Opnxg5jSEmlfZetE
 ``
+
+
+## Test Multi-Language URL
+/api/values/test_lang?culture=en-US
+/api/values/test_lang?culture=th-TH
+/api/values/test_lang?culture=zh-CN
