@@ -57,3 +57,6 @@ Authorization Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY4MTM0OD
 - /api/values/test_lang?culture=en-US
 - /api/values/test_lang?culture=th-TH
 - /api/values/test_lang?culture=zh-CN
+
+## example cmd msbuild
+2msbuild.exe" "D:\a\1\s\aspnetapp.sln" /nologo /nr:false /dl:CentralLogger,"D:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.126.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=773c7c06-0fa8-4ebd-a3c3-f31879bbdd07|SolutionDir=D:\a\1\s"*ForwardingLogger,"D:\a\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.126.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="D:\a\1\a\\" /p:platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="15.0" /p:_MSDeployUserAgent="VSTS_3a02d011-28d5-42db-bc71-65f5a894057d_build_4_0"
