@@ -299,3 +299,4 @@ __pycache__/
 .sonarqube
 tests/api.IntegrationTest.Result
 tests/api.UnitTest.Result
+.DS_STORE
