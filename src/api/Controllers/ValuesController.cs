@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -62,31 +63,54 @@ namespace api.Controllers
         public string GetAssemblies()
         {
             StringBuilder result = new StringBuilder();
-            result.Append("<h1>Assemblies</h1>");
+            //result.Append("<h1>Assemblies</h1>");
             foreach(System.Reflection.AssemblyName an in System.Reflection.Assembly.GetExecutingAssembly().GetReferencedAssemblies()){                      
                 System.Reflection.Assembly asm = System.Reflection.Assembly.Load(an.ToString());
                 foreach(Type type in asm.GetTypes()){   
                     //PROPERTIES
-                    result.Append("<h3>Properties</h3>");
+                    //result.Append("<h3>Properties</h3>");
+                    //result.Append(an.ToString() + "\n");     
+                    result.Append("================= " + type.ToString() + " =================\n");
                     foreach (System.Reflection.PropertyInfo property in type.GetProperties()){
                         if (property.CanRead){
-                            result.Append("<br>" + an.ToString() + "." + type.ToString() + "." + property.Name);       
+                            //result.Append("<br>" + an.ToString() + "." + type.ToString() + "." + property.Name + "\n");
+                            result.Append(type.ToString() + "." + property.Name + "\n");
                         }
                     }
                     //METHODS
-                    result.Append("<h3>Methods</h3>");
+                    //result.Append("<h3>Methods</h3>");
                     var methods = type.GetMethods();
                     foreach (System.Reflection.MethodInfo method in methods){               
-                        result.Append("<br><b>" + an.ToString() + "."  + type.ToString() + "." + method.Name  + "</b>");   
-                        foreach (System.Reflection.ParameterInfo param in method.GetParameters())
-                        {
-                            result.Append("<br><i>Param=" + param.Name.ToString());
-                            result.Append("<br>  Type=" + param.ParameterType.ToString());
-                            result.Append("<br>  Position=" + param.Position.ToString());
-                            result.Append("<br>  Optional=" + param.IsOptional.ToString() + "</i>");
-                        }
+                        //result.Append("<br><b>" + an.ToString() + "."  + type.ToString() + "." + method.Name  + "</b>");
+                        result.Append(method.Name  + "\n");
+                        // foreach (System.Reflection.ParameterInfo param in method.GetParameters())
+                        // {
+                        //     result.Append("Param=" + param.Name.ToString());
+                        //     result.Append("\nType=" + param.ParameterType.ToString());
+                        //     result.Append("\nPosition=" + param.Position.ToString());
+                        //     result.Append("\nOptional=" + param.IsOptional.ToString() + "\n\n");
+                        // }
                     }
                 }
+            }
+
+            return result.ToString();
+        }
+
+        [HttpGet("assemblies2")]
+        public string GetAssembliesV2()
+        {
+            StringBuilder result = new StringBuilder();
+            Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+            
+            foreach (Assembly asm in assemblies)
+            {
+                //FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(asm.Location);
+                AssemblyName asmName = asm.GetName();
+                string name = asmName.Name;
+                Version asmV = asmName.Version;
+                //result.Append(name+" VERSIONS: (A) "+asmV);
+                result.Append(name + "\n");
             }
 
             return result.ToString();
